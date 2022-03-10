@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login-form.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="16x16" href="images/undraw_female_avatar_w3jk.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img class="wave" src="images/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="images/login.svg">
+        </div>
+        <div class="login-content">
+            <form action="index.html">
+                <img src="images/undraw_female_avatar_w3jk.png">
+                <h2 class="title">Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email Address</h5>
+                        <input type="email" class="input" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input" id="myInput" pattern=pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$" required>
+                    </div>
+                </div>
+                <div class="show">
+                    <input type="checkbox" onclick="myFunction()"> <p id="show_pass">Show Password</p>
+                </div>
+                <a id=signup1 href="../signup-page/signup.html">Sign Up</a>
+                <a id=signup2 href="../forgot_password-page/forgot_password.html">Forgot Password?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/login-form.js"></script>
+</body>
+</html>
+

@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .wave{
@@ -179,6 +179,37 @@ a:hover{
 }
 .btn:hover{
 	background-position: right;
+}
+
+#signup1 {
+
+	display:inline-block;
+	margin-right:170px;
+
+}
+
+#signup2 {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+	display: inline-block;
+	margin-bottom: -7px;
+}
+
+#signup2:hover{
+	color: #38d39f;
+}
+
+.show {
+	text-align: left;
+}
+
+#show_pass {
+	margin-left: 25px;
+	margin-top: -23px;
 }
 
 
