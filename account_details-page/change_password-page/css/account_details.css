@@ -16,6 +16,29 @@ body{
 	height: 100%;
 	z-index: -1; /*behind the elements*/
 }
+ul {
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+	top: 0;
+	width: 100%;
+	height:40px;
+	display:block;
+	text-align:center;
+	list-style: none;
+}
+
+li a {
+	color: #666;
+	margin: 15px;
+	font-size:large;
+	margin-top: 5px;
+	float:left;
+	
+}
+
+#change {
+	margin-top:-22px;
+}
 
 .container{
     width: 100vw;
@@ -152,12 +175,26 @@ a{
 	text-align: right;
 	text-decoration: none;
 	color: #999;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	transition: .3s;
+	float: right;
 }
 
 a:hover{
 	color: #38d39f;
+}
+
+ul, #strength {
+	text-align: left;
+}
+
+.show {
+	text-align: left;
+}
+
+#show_pass {
+	margin-left: 25px;
+	margin-top: -23px;
 }
 
 .btn{
@@ -176,45 +213,12 @@ a:hover{
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
+	margin-right: 11rem;
 }
 .btn:hover{
 	background-position: right;
 }
 
-#signup1 {
-
-	display:inline-block;
-	margin-right:170px;
-
-}
-
-#signup2 {
-	display: block;
-	text-align: right;
-	text-decoration: none;
-	color: #999;
-	font-size: 0.9rem;
-	transition: .3s;
-	display: inline-block;
-	margin-bottom: -7px;
-}
-
-#signup2:hover{
-	color: #38d39f;
-}
-
-.show {
-	text-align: left;
-}
-
-#show_pass {
-	margin-left: 25px;
-	margin-top: -23px;
-}
-
-.lastLine {
-	margin-top:5px;
-}
 
 @media screen and (max-width: 1050px){
 	.container{

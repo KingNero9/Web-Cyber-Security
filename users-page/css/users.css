@@ -9,6 +9,49 @@ body{
     overflow: visible;
 }
 
+table, th, td {
+	border: 1px solid rgb(31, 29, 29);
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+table {
+	margin-right: 20rem;
+}
+
+.upper {
+	float:left;
+}
+
+ul {
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+	top: 0;
+	width: 100%;
+	height:40px;
+	display:block;
+	text-align:center;
+	list-style: none;
+}
+
+li a {
+	color: #666;
+	margin: 15px;
+	font-size:large;
+	margin-top: 5px;
+	float:left;
+	
+}
+
+#change {
+	margin-top:-22px;
+}
+
+
+.firstRow {
+	background-color: #77e4c0;
+}
+
 .wave{
 	position: fixed;
 	bottom: 0;
@@ -37,6 +80,7 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
+	margin-top: -250px;
 }
 
 .img img{
@@ -55,8 +99,10 @@ form{
 	margin: 15px 0;
 	color: #333;
 	text-transform: uppercase;
-	font-size: 2.9rem;
+	font-size: 2rem;
+	text-align:center;
 }
+
 
 .login-content .input-div{
 	position: relative;
@@ -152,39 +198,21 @@ a{
 	text-align: right;
 	text-decoration: none;
 	color: #999;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	transition: .3s;
+	float: right;
+	margin-bottom: 1px;
 }
 
 a:hover{
 	color: #38d39f;
 }
 
-.btn{
-	display: block;
-	width: 100%;
-	height: 50px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-	background-size: 200%;
-	font-size: 1.2rem;
-	color: #fff;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
-	margin: 1rem 0;
-	cursor: pointer;
-	transition: .5s;
-}
-.btn:hover{
-	background-position: right;
-}
 
 #signup1 {
 
 	display:inline-block;
-	margin-right:170px;
+	margin-right:5px;
 
 }
 
@@ -203,6 +231,10 @@ a:hover{
 	color: #38d39f;
 }
 
+ul, #strength {
+	text-align: left;
+}
+
 .show {
 	text-align: left;
 }
@@ -212,9 +244,32 @@ a:hover{
 	margin-top: -23px;
 }
 
-.lastLine {
-	margin-top:5px;
+h4 {
+	font-weight: 900px;
 }
+
+.btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+	margin-right: 11rem;
+}
+.btn:hover{
+	background-position: right;
+}
+
 
 @media screen and (max-width: 1050px){
 	.container{
