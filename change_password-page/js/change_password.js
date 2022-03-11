@@ -20,7 +20,7 @@ inputs.forEach(input => {
 });
 
 function myFunction1() {
-	var x = document.getElementById("first");
+	var x = document.getElementById("input1");
 	if (x.type === "password") {
 		x.type = "text";
 	} else {
@@ -29,7 +29,7 @@ function myFunction1() {
 }
 
 function myFunction2() {
-	var x = document.getElementById("second");
+	var x = document.getElementById("input2");
 	if (x.type === "password") {
 		x.type = "text";
 	} else {
@@ -46,3 +46,16 @@ function checkEmail(theForm) {
         return true;
     }
 }
+
+function matchPassword(form) {  
+	var pw1 = document.getElementById("old").value;  
+	var pw2 = document.getElementById("input1").value; 
+	var pw3 = document.getElementById("input2").value;
+	if(pw1 == pw2 || pw1 == pw3){ 
+		alert("You can't reuse the same password"); 
+		return false; 
+	} else {  
+		form.action="../password_changed-page/password_changed.html";
+		return true; 
+	}  
+}  
