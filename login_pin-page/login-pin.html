@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login-pin.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="16x16" href="images/undraw_female_avatar_w3jk.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img class="wave" src="images/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="images/login.svg">
+        </div>
+        <div class="login-content">
+            <form action="../users-page/users.html">
+                <img src="images/undraw_female_avatar_w3jk.png">
+                <h2 class="title">Pin-code confirmation</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-password"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Pin-Code</h5>
+                        <input type="password" class="input" required pattern="^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$" />
+                        <!-- It can be only six digits., It should not start with zero., First digit of the pin code must be from 1 to 9., Next five digits of the pin code may range from 0 to 9. -->
+                    </div>
+                </div>
+                <button type="submit" class="btn" value="Login">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/login-pin.js"></script>
+</body>
+</html>

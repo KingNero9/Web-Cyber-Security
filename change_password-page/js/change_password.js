@@ -13,7 +13,6 @@ function remcl(){
 	}
 }
 
-
 inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
@@ -37,16 +36,6 @@ function myFunction2() {
 	}
 }
 
-function checkEmail(theForm) {
-    if (theForm.input1.value != theForm.input2.value)
-    {
-        alert('Those passwords don\'t match');
-        return false;
-    } else {
-        return true;
-    }
-}
-
 function matchPassword(form) {  
 	var pw1 = document.getElementById("old").value;  
 	var pw2 = document.getElementById("input1").value; 
@@ -54,6 +43,10 @@ function matchPassword(form) {
 	if(pw1 == pw2 || pw1 == pw3){ 
 		alert("You can't reuse the same password"); 
 		return false; 
+	}
+	if(pw2!=pw3) {
+		alert("The new password and the confirmation doesn't match");
+		return false;
 	} else {  
 		form.action="../password_changed-page/password_changed.html";
 		return true; 
