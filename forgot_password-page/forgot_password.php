@@ -13,4 +13,3 @@ if(isset($_POST['sumbit'])){
 	header("Location: index.php?mailsend");
 }
 ?>
-// 
