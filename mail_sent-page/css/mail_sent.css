@@ -57,6 +57,12 @@ form{
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
+.login-content h3{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
 
 .login-content .input-div{
 	position: relative;
